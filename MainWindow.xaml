@@ -1,0 +1,80 @@
+﻿<Window x:Class="LibraryReader.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibraryReader"
+        mc:Ignorable="d"
+        Title="Библиотека от Суспицина Никиты" Height="1050" Width="1200">
+    <Grid>
+        <DockPanel>
+            <!-- Карточки книг -->
+            <WrapPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10">
+                <Border BorderBrush="Gray" BorderThickness="1" Width="200" Height="350" Margin="10" MouseLeftButtonUp="OnBookCardClick">
+                    <StackPanel Height="350">
+                        <!-- Изображение книги -->
+                        <Image Source="C:\Users\suspi\source\repos\LibraryReader\image\Dostoevski.png" Height="290" Stretch="UniformToFill" />
+                        <!-- Название книги -->
+                        <TextBlock Text="Идиот" HorizontalAlignment="Center" FontWeight="Bold"/>
+                        <!-- Имя автора -->
+                        <TextBlock Text="Фёдор Достоевский" HorizontalAlignment="Center" FontWeight="Bold"/>
+                        <!-- Жанр книги -->
+                        <TextBlock Text="Роман" HorizontalAlignment="Center" Foreground="Gray"/>
+                    </StackPanel>
+                </Border>
+
+                <Border BorderBrush="Gray" BorderThickness="1" Width="200" Height="350" Margin="10" MouseLeftButtonUp="OnBookCardClick">
+                    <StackPanel Height="350">
+                        <!-- Изображение книги -->
+                        <Image Source="C:\Users\suspi\source\repos\LibraryReader\image\Prestuplenie.png" Height="290" Stretch="UniformToFill" />
+                        <!-- Название книги -->
+                        <TextBlock Text="Преступление и наказание" HorizontalAlignment="Center" FontWeight="Bold"/>
+                        <!-- Имя автора -->
+                        <TextBlock Text="Фёдор Достоевский" HorizontalAlignment="Center" FontWeight="Bold"/>
+                        <!-- Жанр книги -->
+                        <TextBlock Text="Роман" HorizontalAlignment="Center" Foreground="Gray"/>
+                    </StackPanel>
+                </Border>
+
+                <Border BorderBrush="Gray" BorderThickness="1" Width="200" Height="350" Margin="10" MouseLeftButtonUp="OnBookCardClick">
+                    <StackPanel Height="350">
+                        <!-- Изображение книги -->
+                        <Image Source="C:\Users\suspi\source\repos\LibraryReader\image\DeadGogol.png" Height="290" Stretch="UniformToFill" />
+                        <!-- Название книги -->
+                        <TextBlock Text="Мертвые души" HorizontalAlignment="Center" FontWeight="Bold"/>
+                        <!-- Имя автора -->
+                        <TextBlock Text="Николай Гоголь" HorizontalAlignment="Center" FontWeight="Bold"/>
+                        <!-- Жанр книги -->
+                        <TextBlock Text="Поэма" HorizontalAlignment="Center" Foreground="Gray"/>
+                    </StackPanel>
+                </Border>
+
+                <Border BorderBrush="Gray" BorderThickness="1" Width="200" Height="350" Margin="10" MouseLeftButtonUp="OnBookCardClick">
+                    <StackPanel Height="350">
+                        <!-- Изображение книги -->
+                        <Image Source="C:\Users\suspi\source\repos\LibraryReader\image\WarAndPeace.png" Height="290" Stretch="UniformToFill" />
+                        <!-- Название книги -->
+                        <TextBlock Text="Война и мир" HorizontalAlignment="Center" FontWeight="Bold"/>
+                        <!-- Имя автора -->
+                        <TextBlock Text="Лев Толстой" HorizontalAlignment="Center" FontWeight="Bold"/>
+                        <!-- Жанр книги -->
+                        <TextBlock Text="Роман" HorizontalAlignment="Center" Foreground="Gray"/>
+                    </StackPanel>
+                </Border>
+
+                <Border BorderBrush="Gray" BorderThickness="1" Width="200" Height="350" Margin="10" MouseLeftButtonUp="OnBookCardClick">
+                    <StackPanel Height="350">
+                        <!-- Изображение книги -->
+                        <Image Source="C:\Users\suspi\source\repos\LibraryReader\image\Onegin.png" Height="290" Stretch="UniformToFill" />
+                        <!-- Название книги -->
+                        <TextBlock Text="Евгений Онегин" HorizontalAlignment="Center" FontWeight="Bold"/>
+                        <!-- Имя автора -->
+                        <TextBlock Text="Александр Пушкин" HorizontalAlignment="Center" FontWeight="Bold"/>
+                        <!-- Жанр книги -->
+                        <TextBlock Text="Роман в стихах" HorizontalAlignment="Center" Foreground="Gray"/>
+                    </StackPanel>
+                </Border>
+            </WrapPanel>
+        </DockPanel>
+    </Grid>
+</Window>
